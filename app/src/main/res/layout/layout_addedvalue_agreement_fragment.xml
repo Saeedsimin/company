@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/standard_margin_2x"
+    >
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/standard_margin_2x"
+    android:clipToPadding="false"
+    >
+    <TableLayout
+        android:id="@+id/agrrement_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/table_header"
+        android:layoutDirection="rtl"
+        android:layout_marginTop="56dp"
+        android:layout_marginLeft="@dimen/standard_margin_2x"
+        android:layout_marginRight="@dimen/standard_margin_2x"
+        >
+
+            <com.example.shehnepours.taxam.parents.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:text="اطلاعات توافق (ارزش افزوده)"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/very_large_font"
+                android:textStyle="bold" />
+
+
+    </TableLayout>
+
+    <com.example.shehnepours.taxam.parents.ShadowEditText
+        android:id="@+id/agreement_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standard_margin_2x"
+        android:layout_marginRight="@dimen/standard_margin_2x"
+        android:layout_below="@id/agrrement_header"
+        android:hint="مبلغ توافق"
+        android:inputType="number"
+        android:paddingRight="@dimen/standard_margin_3x"
+        android:paddingBottom="@dimen/standard_margin"
+        android:paddingTop="@dimen/standard_margin"
+        android:background="@color/white"
+        />
+
+    <com.example.shehnepours.taxam.parents.ShadowEditText
+        android:id="@+id/agreement_tax"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agreement_value"
+        android:layout_marginLeft="@dimen/standard_margin_2x"
+        android:layout_marginRight="@dimen/standard_margin_2x"
+        android:hint="مالیات"
+        android:layout_marginTop="@dimen/standard_margin_2x"
+        android:paddingRight="@dimen/standard_margin_3x"
+        android:paddingBottom="@dimen/standard_margin"
+        android:paddingTop="@dimen/standard_margin"
+        android:background="@android:color/white"
+
+        />
+
+
+    <com.example.shehnepours.taxam.parents.ShadowEditText
+        android:id="@+id/agreement_due"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agreement_tax"
+        android:layout_marginLeft="@dimen/standard_margin_2x"
+        android:layout_marginRight="@dimen/standard_margin_2x"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:hint="عوارض"
+        android:paddingRight="@dimen/standard_margin_3x"
+        android:paddingBottom="@dimen/standard_margin"
+        android:paddingTop="@dimen/standard_margin"
+        android:background="@android:color/white"
+        />
+
+    <com.example.shehnepours.taxam.parents.ShadowEditText
+        android:id="@+id/agreement_penalty"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/agreement_due"
+        android:layout_marginLeft="@dimen/standard_margin_2x"
+        android:layout_marginRight="@dimen/standard_margin_2x"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:background="@android:color/white"
+        android:hint="جریمه‌ها"
+        android:paddingBottom="@dimen/standard_margin"
+        android:paddingRight="@dimen/standard_margin_3x"
+        android:paddingTop="@dimen/standard_margin" />
+
+    <ImageView
+        android:id="@+id/image_preview_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/standard_margin_2x"
+        android:layout_below="@+id/agreement_penalty"
+        />
+
+
+
+    <com.example.shehnepours.taxam.parents.ShadowRelativeLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stateListAnimator="@null"
+        android:layout_marginRight="@dimen/standard_margin_2x"
+        android:layout_marginLeft="@dimen/standard_margin_2x"
+        android:layout_below="@+id/image_preview_imageview"
+        android:elevation="10dp"
+        android:translationZ="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        >
+        <com.example.shehnepours.taxam.parents.CustomButton
+            android:id="@+id/agreement_transition_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/agreement_penalty"
+            android:text="ثبت و انتقال به آرشیو"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:stateListAnimator="@null"
+            android:textSize="@dimen/very_large_font"
+            android:background="@color/main_btn_bck"
+            android:layout_marginRight="@dimen/standard_margin_2x"
+            android:layout_marginTop="@dimen/standard_margin_2x"
+            android:layout_marginLeft="@dimen/standard_margin_2x"
+            />
+        <ImageButton
+            android:id="@+id/pick_image_agreement_added"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@null"
+            android:paddingBottom="@dimen/standard_margin"
+            android:paddingTop="@dimen/standard_margin"
+            android:paddingRight="@dimen/standard_margin_2x"
+            android:paddingLeft="@dimen/standard_margin_2x"
+            android:src="@drawable/ic_camera_white"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/standard_margin_2x"
+            android:layout_marginRight="@dimen/standard_margin_2x"
+            android:layout_below="@+id/agreement_transition_btn"
+            android:background="@color/other_btn_bck"
+            android:layout_marginTop="@dimen/standard_margin_2x"
+            android:layout_marginLeft="@dimen/standard_margin_4x"
+            android:elevation="2dp"
+            android:translationZ="4dp"
+            />
+
+
+    </com.example.shehnepours.taxam.parents.ShadowRelativeLayout>
+
+
+</RelativeLayout>
+</ScrollView>

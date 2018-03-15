@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <group android:id="@+id/navigation_user_name"
+        >
+        <item
+            android:id="@+id/navigation_menu_user_name"
+            android:title="محمد جمالی پور"
+            />
+    </group>
+    <group  android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_menu_user_account"
+            android:title="تعریف/انتخاب شرکت یا فروشگاه"/>
+        <item
+            android:id="@+id/navigation_menu_tax_file"
+            android:title="پرونده مالیاتی" />
+        <item
+            android:id="@+id/navigation_menu_rules"
+            android:title="قوانین و بخشنامه‌ها" />
+        <item android:id="@+id/navigation_menu_services"
+            android:title="خدمات تکسام"/>
+    </group>
+    <group>
+        <item android:id="@+id/blank" android:title=""/>
+    </group>
+    <group
+        android:checkableBehavior="single"
+        >
+        <item android:id="@+id/navigation_menu_contact_us"
+
+            android:title="ارتباط با ما">12sp</item>
+        <item android:id="@+id/navigation_menu_offers_critics" android:title="انتقادات و پیشنهادات">12sp</item>
+    </group>
+
+</menu>

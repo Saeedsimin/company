@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:layout_marginTop="@dimen/standard_margin_4x"
+    android:layout_marginLeft="@dimen/standard_margin_2x"
+    android:layout_marginRight="@dimen/standard_margin_2x"
+    android:shrinkColumns="*"
+    android:clipToPadding="false"
+    >
+
+
+
+        <com.example.shehnepours.taxam.parents.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/standard_margin"
+            android:paddingBottom="@dimen/standard_margin"
+            android:gravity="center"
+            android:background="@color/tab_background_unselected"
+            android:text="پرونده جاری (باز)"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/very_large_font"
+            android:textStyle="bold" />
+
+
+    <TableRow
+        android:background="@android:color/white"
+        android:gravity="center"
+        >
+        <com.example.shehnepours.taxam.parents.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_btn_bck"
+            android:text="نوع مالیات"
+            android:paddingTop="@dimen/standard_margin_0.5x"
+            android:paddingBottom="@dimen/standard_margin_0.5x"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin_0.5x"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <com.example.shehnepours.taxam.parents.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_btn_bck"
+            android:textAlignment="center"
+            android:paddingTop="@dimen/standard_margin_0.5x"
+            android:paddingBottom="@dimen/standard_margin_0.5x"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:text="سال"
+            android:textStyle="bold" />
+        <com.example.shehnepours.taxam.parents.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_btn_bck"
+            android:textAlignment="center"
+            android:paddingTop="@dimen/standard_margin_0.5x"
+            android:paddingBottom="@dimen/standard_margin_0.5x"
+            android:text="مرحله"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:textStyle="bold" />
+        <com.example.shehnepours.taxam.parents.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_btn_bck"
+            android:textAlignment="center"
+            android:paddingTop="@dimen/standard_margin_0.5x"
+            android:paddingBottom="@dimen/standard_margin_0.5x"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginLeft="@dimen/standard_margin_0.5x"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:text="مهلت"
+            android:textStyle="bold" />
+    </TableRow>
+    <TextView
+        android:layout_height="5dp"
+        android:layout_width="match_parent"
+        android:background="@color/other_btn_bck"
+        />
+    <TableRow
+        android:id="@+id/newtaxfile_firstrow"
+        android:background="@android:color/white"
+        android:stateListAnimator="@null"
+        android:gravity="center"
+        android:elevation="@dimen/standard_margin"
+        >
+        <com.example.shehnepours.taxam.parents.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ارزش افزوده"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <com.example.shehnepours.taxam.parents.CustomTextView
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="۱۳۹۷"
+            android:textStyle="bold" />
+        <com.example.shehnepours.taxam.parents.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:textAlignment="center"
+            android:text="مرحله اعتراض"
+            android:textStyle="bold" />
+        <com.example.shehnepours.taxam.parents.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:textAlignment="center"
+            android:text="۹۶/۲/۲۵"
+            android:textStyle="bold" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/newtaxfile_secondrow"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:elevation="@dimen/standard_margin"
+        >
+        <com.example.shehnepours.taxam.parents.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مالیات عملکردی"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <com.example.shehnepours.taxam.parents.CustomTextView
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="۱۳۹۶"
+            android:textStyle="bold" />
+        <com.example.shehnepours.taxam.parents.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:textAlignment="center"
+            android:text="مرحله کارشناسی"
+            android:textStyle="bold" />
+        <com.example.shehnepours.taxam.parents.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:textAlignment="center"
+            android:text="۹۶/۱/۱۵"
+            android:textStyle="bold" />
+    </TableRow>
+
+
+</TableLayout>

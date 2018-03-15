@@ -71,7 +71,7 @@ public class TaxTimelineFragment extends Fragment {
         madehDown = (ImageView) view.findViewById(R.id.madeh_down);
         divanDown = (ImageView) view.findViewById(R.id.ic_down_divan);
 
-        
+
 
     }
 

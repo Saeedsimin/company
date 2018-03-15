@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/white"
+    android:minHeight="?attr/actionBarSize"
+    android:gravity="center"
+    android:elevation="20dp"
+    app:layout_scrollFlags="scroll|enterAlways"
+    >
+    <com.example.shehnepours.taxam.parents.ActivityTitleTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/very_large_font"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:id="@+id/toolbar_title"
+        android:textColor="@color/main_btn_bck"
+        />
+        <TextView
+            android:id="@+id/back_btn"
+            android:clickable="true"
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:text=""
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/standard_margin_4x"
+            android:background="@drawable/rounded_ripple"
+            android:textSize="@dimen/very_large_font"
+            android:textStyle="bold"
+            android:layout_gravity="left"/>
+
+
+
+
+
+
+</android.support.v7.widget.Toolbar>

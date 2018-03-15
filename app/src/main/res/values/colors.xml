@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorEditTextBackground">#acacac</color>
+    <color name="colorEditTextText">#7c7c7c</color>
+    <color name="colorButton">#134623</color>
+    <color name="tabColor">#309c51</color>
+    <color name="colorSignupText">#898989</color>
+    <color name="menuColor">#acacac</color>
+    <color name="red">#ff0000</color>
+    <color name="titleBarColor">#e1e1e1</color>
+    <color name="activityBackground">#ebebeb</color>
+    <color name="tab_background_selected">#669966</color>
+    <color name="tab_background_unselected">#acacac</color>
+    <color name="tab_text_unselected">#ffffff</color>
+    <color name="header_gradient_start">#19222b</color>
+    <color name="header_gradient_end">#21773c</color>
+    <color name="newtaxfile_button_background">#21783c</color>
+    <color name="moshavereh_button_background">#d33636</color>
+    <color name="expandable_item_background">#707070</color>
+    <color name="cam_dark_green">#274e13</color>
+    <color name="cam_light_green">#6aa84f</color>
+    <color name="header_bck">#006600</color>
+    <color name="main_btn_bck">#006600</color>
+    <color name="other_btn_bck">#669966</color>
+    <color name="table_header">#acacac</color>
+    <color name="border_line">#003300</color>
+    <color name="subitem">#cccccc</color>
+    <color name="hint_text">#7d7d7d</color>
+    <color name="item_selected">#fffccc</color>
+
+
+</resources>

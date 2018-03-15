@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingTop="60dp"
+    android:clipToPadding="false"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="@dimen/standard_margin_2x"
+        android:layout_marginRight="@dimen/standard_margin_2x"
+        android:paddingBottom="60dp"
+        android:stateListAnimator="@null"
+        android:background="@color/white"
+        android:elevation="@dimen/standard_margin"
+        android:layout_centerHorizontal="true">
+
+        <com.example.shehnepours.taxam.parents.CustomButton
+            android:id="@+id/operational_tax_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@null"
+            android:layout_marginTop="@dimen/standard_margin_4x"
+            android:background="@color/tab_background_unselected"
+            android:text="مالیات مستقیم"
+            android:textSize="@dimen/very_large_font"
+            android:textColor="@color/white"
+            android:elevation="9dp"
+            />
+        <com.example.shehnepours.taxam.parents.CustomButton
+            android:id="@+id/value_add_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@null"
+            android:layout_below="@+id/operational_tax_btn"
+            android:background="@color/tab_background_unselected"
+            android:layout_marginBottom="70dp"
+            android:text="مالیات ارزش افزوده"
+            android:textSize="@dimen/very_large_font"
+            android:textColor="@color/white"
+            android:elevation="@dimen/standard_margin"
+            />
+
+        <com.example.shehnepours.taxam.parents.CustomButton
+            android:id="@+id/consult_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/standard_margin_4x"
+            android:layout_marginRight="@dimen/standard_margin_4x"
+            android:background="@color/main_btn_bck"
+            android:text="مشاوره"
+            android:textSize="@dimen/very_large_font"
+            android:textColor="@color/white"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="@dimen/standard_margin_4x"
+            android:elevation="@dimen/standard_margin"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="70dp"
+    >
+
+        <SeekBar
+            android:id="@+id/mf_progress_bar"
+            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:progressDrawable="@drawable/green_progress_drawable"
+            android:progress="10"
+            android:layout_gravity="center_horizontal"
+            android:thumb="@drawable/ic_prog_indicator_yellow"
+            android:layoutDirection="ltr"
+            android:splitTrack="false"
+            />
+        <include layout="@layout/parent_taable_layout"
+            android:id="@+id/taxfiles_table"/>
+
+        <com.example.shehnepours.taxam.parents.CustomButton
+            android:id="@+id/newtaxfile_button"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:stateListAnimator="@null"
+            android:layout_marginLeft="@dimen/standard_margin_2x"
+            android:textSize="@dimen/large_font"
+            android:textColor="@android:color/white"
+            android:text="جدید"
+            android:layout_marginTop="@dimen/standard_margin_2x"
+            android:layout_below="@+id/taxfiles_table"
+            android:background="@color/other_btn_bck"
+            android:layout_alignParentLeft="true"
+            android:elevation="@dimen/standard_margin"
+            />
+
+</RelativeLayout>

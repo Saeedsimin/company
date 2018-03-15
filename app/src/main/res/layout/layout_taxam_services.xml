@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="70dp"
+    android:paddingBottom="50dp"
+    android:clipToPadding="false"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/standard_margin_3x"
+        android:layout_marginRight="@dimen/standard_margin_3x"
+        android:stateListAnimator="@null"
+        android:background="@color/white"
+        android:elevation="@dimen/standard_margin"
+        >
+        <RadioGroup
+            android:id="@+id/consult_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin_4x"
+            android:layout_marginLeft="@dimen/standard_margin_3x"
+            android:layout_marginRight="@dimen/standard_margin_3x"
+            android:layoutDirection="rtl"
+
+            >
+            <com.example.shehnepours.taxam.parents.CustomRadioButton
+                android:id="@+id/free_consult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/standard_margin"
+                android:text="مشاوره رایگان"
+                android:checked="true"
+                android:textColor="@color/hint_text"
+                android:textSize="@dimen/large_font"
+                />
+            <com.example.shehnepours.taxam.parents.CustomRadioButton
+                android:id="@+id/phone_consult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/standard_margin"
+                android:text="مشاوره تلفنی"
+                android:textColor="@color/hint_text"
+                android:textSize="@dimen/large_font"
+                />
+            <com.example.shehnepours.taxam.parents.CustomRadioButton
+                android:id="@+id/face2face_consult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/standard_margin"
+                android:text="مشاوره حضوری در دفتر مشاور"
+                android:textColor="@color/hint_text"
+                android:textSize="@dimen/large_font"
+                />
+            <com.example.shehnepours.taxam.parents.CustomRadioButton
+                android:id="@+id/defense_layehe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/standard_margin"
+                android:text="لایحه دفاعی"
+                android:textColor="@color/hint_text"
+                android:textSize="@dimen/large_font"
+                />
+
+        </RadioGroup>
+        <com.example.shehnepours.taxam.parents.CustomTextView
+            android:id="@+id/message_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin_2x"
+            android:layout_marginRight="@dimen/standard_margin_3x"
+            android:layout_marginLeft="@dimen/standard_margin_3x"
+            android:textSize="@dimen/large_font"
+            android:text="لطفا سوال خود را وارد نمایید:"
+            android:textColor="@color/main_btn_bck"
+            android:layout_below="@id/consult_group"/>
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/message_box"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:paddingRight="@dimen/standard_margin"
+            android:paddingLeft="@dimen/standard_margin"
+            android:paddingTop="@dimen/standard_margin"
+            android:paddingBottom="@dimen/standard_margin"
+            android:gravity="top|right"
+            android:layout_below="@id/message_textview"
+            android:layout_marginTop="@dimen/standard_margin_2x"
+            android:layout_marginLeft="@dimen/standard_margin_3x"
+            android:layout_marginRight="@dimen/standard_margin_3x"
+            android:background="@drawable/messagebox_background"
+            />
+
+        <com.example.shehnepours.taxam.parents.CustomButton
+            android:id="@+id/send_message_btn"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/message_box"
+            android:layout_marginTop="@dimen/standard_margin_2x"
+            android:layout_centerHorizontal="true"
+            android:background="@color/main_btn_bck"
+            android:stateListAnimator="@null"
+            android:textColor="@color/white"
+            android:text="ارسال"
+            android:textSize="@dimen/large_font"
+            android:elevation="@dimen/standard_margin"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

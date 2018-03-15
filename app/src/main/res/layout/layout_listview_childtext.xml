@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="2dp"
+    >
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:layout_alignParentRight="true">
+    <com.example.shehnepours.taxam.parents.CustomTextView
+        android:paddingTop="@dimen/standard_margin"
+        android:paddingBottom="5dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="@dimen/standard_margin_3x"
+        android:text="پیش فرض"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:background="@color/subitem"
+        android:layout_height="50dp"
+        android:id="@+id/childtext"
+        android:textSize="@dimen/very_large_font"
+        android:textColor="@android:color/white"/>
+</com.balysv.materialripple.MaterialRippleLayout>
+
+</RelativeLayout>

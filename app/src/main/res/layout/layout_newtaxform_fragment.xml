@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingBottom="@dimen/standard_margin"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/standard_margin_2x"
+        android:clipToPadding="false">
+
+        <TableLayout
+            android:id="@+id/taxform_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:layout_marginTop="56dp"
+            android:layout_marginLeft="@dimen/standard_margin_2x"
+            android:layout_marginRight="@dimen/standard_margin_2x"
+            android:elevation="@dimen/standard_margin"
+            android:background="@color/tab_background_unselected"
+            >
+                <com.example.shehnepours.taxam.parents.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:text="اطلاعات پرونده مالیاتی شما"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:textSize="@dimen/very_large_font"
+                    android:textStyle="bold" />
+        </TableLayout>
+    <com.example.shehnepours.taxam.parents.ShadowRelativeLayout
+        android:id="@+id/tax_form_layout"
+        android:layout_below="@+id/taxform_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standard_margin_2x"
+        android:layout_marginRight="@dimen/standard_margin_2x"
+        android:stateListAnimator="@null"
+        android:elevation="@dimen/standard_margin"
+        android:background="@color/white">
+        <android.support.v7.widget.RecyclerView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tax_type_form"
+            style="@style/recyclerView.expandable"
+            android:layoutDirection="rtl"
+            android:paddingBottom="@dimen/standard_margin_0.5x"
+            android:dividerHeight="2dip"
+            android:outlineProvider="bounds"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:elevation="@dimen/standard_margin"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+        <com.example.shehnepours.taxam.parents.ShadowEditText
+            android:id="@+id/year_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tax_type_form"
+            android:layout_marginBottom="@dimen/standard_margin_0.5x"
+            android:background="@android:color/white"
+            android:maxLength="4"
+            android:paddingTop="@dimen/standard_margin"
+            android:paddingBottom="@dimen/standard_margin"
+            android:hint="سال (به عنوان مثال؛ ۱۳۹۷)"
+            android:paddingRight="@dimen/standard_margin_3x"
+            android:inputType="number" />
+        <android.support.v7.widget.RecyclerView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/step_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layoutDirection="rtl"
+            android:layout_below="@id/year_edittext"
+            android:choiceMode="singleChoice"
+            android:paddingBottom="@dimen/standard_margin"
+            android:dividerHeight="2dip"
+            android:outlineProvider="bounds"
+            android:layout_marginBottom="@dimen/standard_margin"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+        <com.example.shehnepours.taxam.parents.ShadowEditText
+            android:id="@+id/eblagh_taskhis_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/step_form"
+            android:background="@android:color/white"
+            android:paddingTop="@dimen/standard_margin"
+            android:paddingBottom="@dimen/standard_margin"
+            android:hint="مالیات تشخیصی"
+            android:outlineProvider="bounds"
+            android:paddingRight="@dimen/standard_margin_3x"
+            android:inputType="number"
+            />
+        <com.example.shehnepours.taxam.parents.ShadowEditText
+            android:id="@+id/eblagh_ebraz_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eblagh_taskhis_edittext"
+            android:background="@android:color/white"
+            android:paddingTop="@dimen/standard_margin"
+            android:outlineProvider="bounds"
+            android:paddingBottom="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:hint="مالیات ابرازی (اختیاری)"
+            android:paddingRight="@dimen/standard_margin_3x"
+            android:inputType="number"
+            />
+
+        <com.example.shehnepours.taxam.parents.CustomButton
+            android:id="@+id/eblagh_date_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eblagh_ebraz_edittext"
+            android:background="@android:color/white"
+            android:textSize="@dimen/standard_margin_2x"
+            android:paddingTop="@dimen/standard_margin"
+            android:paddingBottom="@dimen/standard_margin"
+            android:stateListAnimator="@null"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:hint="تاریخ ابلاغ"
+            android:elevation="@dimen/standard_margin"
+            android:paddingRight="@dimen/standard_margin_3x"
+            android:inputType="date"
+            />
+    </com.example.shehnepours.taxam.parents.ShadowRelativeLayout>
+
+        <com.example.shehnepours.taxam.parents.ShadowRelativeLayout
+            android:id="@+id/confirminfo_taxform_layout"
+            android:layout_below="@+id/tax_form_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin_2x"
+            android:layout_marginLeft="@dimen/standard_margin_2x"
+            android:layout_marginRight="@dimen/standard_margin_2x"
+            android:stateListAnimator="@null"
+            android:background="@color/white"
+            android:elevation="@dimen/standard_margin">
+            <com.example.shehnepours.taxam.parents.CustomButton
+                android:id="@+id/confirminfo_taxform_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textSize="@dimen/very_large_font"
+                android:layout_marginRight="@dimen/standard_margin_2x"
+                android:layout_below="@+id/tax_form_layout"
+                android:stateListAnimator="@null"
+                android:text="ثبت اطلاعات"
+                android:textColor="@android:color/white"
+                android:background="@color/main_btn_bck"
+                android:layout_marginTop="@dimen/standard_margin_2x"
+                android:layout_marginLeft="@dimen/standard_margin_2x"
+                android:elevation="@dimen/standard_margin"
+                />
+            <com.example.shehnepours.taxam.parents.CustomButton
+                android:id="@+id/rules_taxform_btn"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/large_font"
+                android:stateListAnimator="@null"
+                android:enabled="false"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/confirminfo_taxform_btn"
+                android:text="قوانین این بخش"
+                android:textColor="@android:color/white"
+                android:background="@color/tab_background_unselected"
+                android:layout_marginTop="@dimen/standard_margin_2x"
+                android:layout_marginLeft="@dimen/standard_margin_2x"
+
+                />
+            <ImageButton
+                android:id="@+id/taxform_imagebutton"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/standard_margin_2x"
+                android:paddingLeft="@dimen/standard_margin_2x"
+                android:paddingBottom="@dimen/standard_margin"
+                android:paddingTop="@dimen/standard_margin"
+                android:src="@drawable/ic_camera_white"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/standard_margin_2x"
+                android:layout_below="@+id/confirminfo_taxform_btn"
+                android:background="@color/other_btn_bck"
+                android:layout_marginTop="@dimen/standard_margin_2x"
+                android:layout_marginLeft="@dimen/standard_margin_4x"
+                android:stateListAnimator="@null"
+                android:elevation="@dimen/standard_margin"
+                />
+
+
+            <FrameLayout
+                android:id="@+id/frame_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/taxform_imagebutton"
+                android:layout_marginBottom="52dp">
+                <com.example.shehnepours.taxam.parents.ExpandableHeightGridView
+                    android:id="@+id/preview_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnWidth="150dip"
+                    android:horizontalSpacing="5dip"
+                    android:numColumns="2"
+                    android:scrollbars="vertical"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="35dp"
+                    android:layout_below="@+id/layehe_eteraz_btn"
+                    android:layout_marginRight="@dimen/standard_margin_2x"
+                    android:layout_marginLeft="@dimen/standard_margin_2x"
+                    android:layout_marginTop="@dimen/standard_margin_2x"
+                    />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/preview_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="56dp"
+                >
+                <ImageView
+                    android:id="@+id/expanded_imageview"
+                    android:layout_marginLeft="@dimen/standard_margin_2x"
+                    android:layout_marginRight="@dimen/standard_margin_2x"
+                    android:layout_marginTop="@dimen/standard_margin_2x"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            </FrameLayout>
+
+        </com.example.shehnepours.taxam.parents.ShadowRelativeLayout>
+
+        <com.example.shehnepours.taxam.parents.ShadowRelativeLayout
+            android:id="@+id/decision_taxform_layout"
+            android:layout_below="@+id/confirminfo_taxform_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin_2x"
+            android:layout_marginLeft="@dimen/standard_margin_2x"
+            android:layout_marginRight="@dimen/standard_margin_2x"
+            android:stateListAnimator="@null"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/standard_margin_2x"
+            android:elevation="@dimen/standard_margin">
+            <com.example.shehnepours.taxam.parents.CustomButton
+                android:id="@+id/yourdecision_taxform_btn"
+                android:text="تصمیم با شماست!"
+                android:textSize="@dimen/very_large_font"
+                android:enabled="false"
+                android:textColor="@color/tab_background_unselected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_below="@+id/confirminfo_taxform_layout"
+                android:layout_marginRight="@dimen/standard_margin_2x"
+                android:layout_marginTop="@dimen/standard_margin_2x"
+                android:layout_marginLeft="@dimen/standard_margin_2x"
+                />
+            <com.example.shehnepours.taxam.parents.CustomButton
+                android:id="@+id/iagree_taxform_btn"
+                android:text="توافق می‌کنم"
+                android:enabled="false"
+                android:textSize="@dimen/very_large_font"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stateListAnimator="@null"
+                android:background="@color/tab_background_unselected"
+                android:layout_below="@+id/yourdecision_taxform_btn"
+                android:layout_marginRight="@dimen/standard_margin_2x"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_marginLeft="@dimen/standard_margin_2x"
+                />
+            <com.example.shehnepours.taxam.parents.CustomButton
+                android:id="@+id/eteraz_taxform_btn"
+                android:text="اعتراض دارم"
+                android:textSize="@dimen/very_large_font"
+                android:enabled="false"
+                android:stateListAnimator="@null"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tab_background_unselected"
+                android:layout_below="@+id/iagree_taxform_btn"
+                android:layout_marginRight="@dimen/standard_margin_2x"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_marginLeft="@dimen/standard_margin_2x"
+                />
+
+
+        </com.example.shehnepours.taxam.parents.ShadowRelativeLayout>
+        <com.example.shehnepours.taxam.parents.ShadowRelativeLayout
+            android:id="@+id/consult_taxform_layout"
+            android:layout_below="@+id/decision_taxform_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin_2x"
+            android:layout_marginLeft="@dimen/standard_margin_2x"
+            android:layout_marginRight="@dimen/standard_margin_2x"
+            android:paddingBottom="@dimen/standard_margin"
+            android:stateListAnimator="@null"
+            android:background="@color/white"
+            android:elevation="@dimen/standard_margin">
+            <com.example.shehnepours.taxam.parents.CustomButton
+                android:id="@+id/consult_btn"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:background="@color/main_btn_bck"
+                android:stateListAnimator="@null"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/standard_margin_4x"
+                android:text="مشاوره"
+                android:textSize="@dimen/very_large_font"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"
+                android:elevation="@dimen/standard_margin"
+            />
+
+        </com.example.shehnepours.taxam.parents.ShadowRelativeLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

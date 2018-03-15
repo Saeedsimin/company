@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">TAXAM</string>
+    <string name="phone_firstdigit_warning">شماره همراه با ۰ شروع می شود</string>
+    <string name="password_length_warning">رمزعبور بین ۶ تا ۱۶ کاراکتر است</string>
+    <string name="password_not_entered_warning">رمز عبور وارد نشده است</string>
+    <string name="password_notsame_warning">رمز عبور تکرار شده با اصلی یکسان نیست</string>
+    <string name="fill_all_fields_warning">لطفا همه موارد را پر کنید</string>
+    <string name="send_confirmation_success">کد فعالسازی به شماره شما ارسال شد</string>
+    <string name="send_confirmation_failure">در ارسال کد به شماره شما خطایی پیش آمد، لطفا ابتدا موارد را چک کرده و سپس مجددا ثبت نام کنید</string>
+    <string name="not_valid_number">شماره وارد شده معتبر نمی‌ باشد</string>
+    <string name="server_failure">با عرض پوزش، سرور قادر به پاسخگویی نمی باشد، لطفا بعد از چند دقیقه مجددا تلاش نمایید</string>
+    <string name="signedup_before">شما قبلا ثبت نام نموده اید</string>
+    <string name="validaiton_waiting">در حال اعتبارسنجی کد ...</string>
+    <string name="please_wait">لطفا صبر کنید...</string>
+    <string name="validation_confirmed">کد اعتبارسنحی شما تایید شد</string>
+    <string name="validation_failed">کد اعتبارسنجی نادرست است، لطفا مجددا سعی نمایید</string>
+    <string name="wrong_user_pass">شماره همراه و یا رمز عبور نادرست می باشد</string>
+    <string name="not_signup">شما تاکنون ثبت نام نکرده اید</string>
+    <string name="enter_phone_number">لطفا شماره همراه را وارد نمایید</string>
+    <string name="sending_password">در حال ارسال رمز عبور ...</string>
+    <string name="password_sent">رمز عبور جدید به شماره شما ارسال شد</string>
+    <string name="no_such_phone_number">شماره واردشده وجود ندارد</string>
+    <string name="activate_your_account">لطفا نسبت به فعالسازی حساب خود اقدام کنید</string>
+    <string name="info_conf">در حال ثبت اطلاعات ...</string>
+</resources>

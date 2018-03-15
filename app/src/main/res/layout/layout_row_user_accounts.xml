@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <LinearLayout
+        android:id="@+id/account_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layoutDirection="rtl"
+        >
+        <com.example.shehnepours.taxam.parents.CustomTextView
+            android:id="@+id/company_name"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/standard_margin"
+            android:paddingRight="@dimen/standard_margin"
+            android:paddingBottom="@dimen/standard_margin"
+            android:paddingTop="@dimen/standard_margin"
+            android:gravity="center"
+            android:text="نام شرکت"
+            android:textSize="@dimen/large_font"/>
+        <com.example.shehnepours.taxam.parents.CustomTextView
+            android:id="@+id/company_business"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/standard_margin"
+            android:paddingRight="@dimen/standard_margin"
+            android:paddingBottom="@dimen/standard_margin"
+            android:paddingTop="@dimen/standard_margin"
+            android:text="حرفه شرکت"
+            android:textSize="@dimen/large_font"/>
+        <ImageView
+            android:id="@+id/edit_ic"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/standard_margin"
+            android:paddingRight="@dimen/standard_margin"
+            android:paddingBottom="@dimen/standard_margin"
+            android:paddingTop="@dimen/standard_margin"
+            android:src="@drawable/ic_edit_gray_dark"
+            android:textSize="@dimen/large_font"/>
+        <ImageView
+            android:id="@+id/delete_ic"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/standard_margin"
+            android:paddingRight="@dimen/standard_margin"
+            android:paddingBottom="@dimen/standard_margin"
+            android:paddingTop="@dimen/standard_margin"
+            android:src="@drawable/ic_delete_gray_dark"
+            android:textSize="@dimen/large_font"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
